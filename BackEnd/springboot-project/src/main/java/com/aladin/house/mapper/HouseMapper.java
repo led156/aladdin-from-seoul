@@ -1,11 +1,3 @@
-package com.aladin.house.mapper;
-
-import org.apache.ibatis.annotations.Mapper;
-
-@Mapper
-public interface HouseMapper {
-	// latitudeA latitudeB longitudeA longitudeB 사이 데이터 얻기
-	//List<HouseCardVo>
-	
-	// latitude, longitude 와 가까운 순 아파트 정보 얻기
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:337afa87e2e3106f025e7c858eaa1d655bb0a3efbcb3b66980f52024d017117d
+size 646
