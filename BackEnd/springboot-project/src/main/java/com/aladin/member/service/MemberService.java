@@ -1,16 +1,3 @@
-package com.aladin.member.service;
-
-import com.aladin.member.dto.LogInRequestDto;
-import com.aladin.member.dto.LogInResponseDto;
-import com.aladin.member.dto.MemberRegistRequestDto;
-
-public interface MemberService {
-	boolean registMember(MemberRegistRequestDto memberDto);
-
-	boolean isDuplicatedUsername(String username);
-
-	boolean isDuplicatedEmail(String email);
-
-	LogInResponseDto loginMember(LogInRequestDto loginRequestDto);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a025f807a60a8e5b30e66eee34eec7bd2f52f49221ac2636bc4f576080fee928
+size 634
