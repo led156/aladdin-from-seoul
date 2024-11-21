@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03200570c0516aed147ebb493eea3bb0e7d8a899e65ed018632aa47a9bd39471
-size 421
+package com.aladin;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+@MapperScan(basePackages = "com.aladin.**.mapper")
+public class AladinFromSeoulApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AladinFromSeoulApplication.class, args);
+	}
+
+}

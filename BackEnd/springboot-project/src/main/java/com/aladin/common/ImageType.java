@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3fbd052170ae33373c5cd0c43cad39e1feb634adcd61fca01f522cab424f32c
-size 272
+package com.aladin.common;
+
+public enum ImageType {
+	PROFILE("profile"), // 프로필 이미지
+	POST("post"); // 게시물 이미지
+
+	private final String folder;
+
+	ImageType(String folder) {
+		this.folder = folder;
+	}
+
+	public String getFolder() {
+		return folder;
+	}
+}
