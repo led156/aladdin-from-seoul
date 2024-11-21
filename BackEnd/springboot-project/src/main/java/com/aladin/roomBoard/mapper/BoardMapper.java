@@ -1,14 +1,3 @@
-package com.aladin.roomBoard.mapper;
-
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-
-import com.aladin.roomBoard.dto.BoardInsertRequestDto;
-
-@Mapper
-public interface BoardMapper {
-	void insertBoard(@Param("dto") BoardInsertRequestDto boardInsertRequestDto);
-
-	void insertBoardImage(Long boardId, String imageUrl, int imageOrder);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a88aa4c4e04fb6fb32b3aa855658ad4b44e3026ae93c93b72df16929992ebb7e
+size 554
