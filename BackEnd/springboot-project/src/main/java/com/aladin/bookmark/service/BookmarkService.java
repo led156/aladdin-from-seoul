@@ -1,17 +1,3 @@
-package com.aladin.bookmark.service;
-
-import java.util.List;
-
-import com.aladin.roomBoard.dto.BoardCardDto;
-
-public interface BookmarkService {
-	void addBoardBookmark(String username, Long roomboardsId);
-
-	void removeBoardBookmark(String username, Long roomboardsId);
-
-	public List<BoardCardDto> getBookmarkedBoardsByCursor(String username, Long cursorId, Long pageSize);
-
-	void addDealBookmark(String username, Long housedealsNo);
-
-	void removeDealBookmark(String username, Long housedealsNo);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f953437da56c1daaa169f4a80d91b2fbe8f56d6db999201883aaa96e9926bcb4
+size 648
