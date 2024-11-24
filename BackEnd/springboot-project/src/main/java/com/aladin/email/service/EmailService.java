@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37f8ddd7629f38699abf083c8edaf52c92e950a1c927c9bb42a66bad36c991c3
-size 297
+package com.aladin.email.service;
+
+import com.aladin.email.dto.EmailAuthRequestDto;
+import com.aladin.email.dto.EmailRequestDto;
+
+public interface EmailService {
+	boolean sendEmailAuthCode(EmailRequestDto emailRequestDto);
+
+	boolean verifyEmailAuthCode(EmailAuthRequestDto emailAuthRequestDto);
+}

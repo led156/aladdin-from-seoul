@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f6b039e18e79b212d160a633daca8ed26ce7d90e8e8cfd8f2264675bb01376a
-size 214
+package com.aladin.member.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class LogInRequestDto {
+	private String username; // 회원 아이디
+	private String password; // 비밀번호
+}

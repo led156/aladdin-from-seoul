@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b6f7b578fafbff27b6159d9428dee74738f263bc78d64b02962eff855a74871
-size 232
+package com.aladin.bookmark.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class DealBookmarkPostRequestDto {
+	private String username; // 회원 username
+	private Long housedealsNo; // 거래 내역 ID
+}

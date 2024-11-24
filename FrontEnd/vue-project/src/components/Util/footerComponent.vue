@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b3903bd95b58b014b244b9cc64806142b9ea01fffa04b394fd8908a50dc5e73
-size 372
+<template>
+    <footer class="site-footer">
+        <nav class="footer-navigation">
+          <a href="#" class="footer-link">Contact Us</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </nav>
+      </footer>
+</template>
+
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>

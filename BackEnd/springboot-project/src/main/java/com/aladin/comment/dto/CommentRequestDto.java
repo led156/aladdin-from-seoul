@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52ea26a953b6ec5d80be59921237136603634a902060cd73bd405df0237ba527
-size 278
+package com.aladin.comment.dto;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class CommentRequestDto {
+	private Long roomboardsId; // 게시물 ID
+	private String membersUsername; // 작성자
+	private String comment; // 댓글 내용
+}

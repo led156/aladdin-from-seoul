@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5892404696a06aa97e39c73956bfcfd11d2732908b96595889bb21073be8414
-size 347
+package com.aladin.common.session;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.METHOD) // 메서드에 적용
+@Retention(RetentionPolicy.RUNTIME) // 런타임 시점에 동작
+public @interface LoginCheck {
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78a702f63aa523e8fde5e9a74d3cc1ba8f0a61c13012a6c175a024ea5377cab3
-size 375
+package com.aladin.member.dto;
+
+import com.aladin.member.enums.MemberGrade;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class MemberInfoResponseDto {
+	private String username;
+	private String name;
+	private String nickname;
+	private String email;
+	private String profileImagePath;
+	private String bio;
+	private MemberGrade grade;
+}

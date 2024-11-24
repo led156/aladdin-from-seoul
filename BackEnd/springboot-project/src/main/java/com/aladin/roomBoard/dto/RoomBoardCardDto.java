@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e83668909d5ef1bb230f29e0ae7563adfc4e47dfec61e44a6997c3cd4b3f2d7
-size 316
+package com.aladin.roomBoard.dto;
+
+import com.aladin.roomBoard.vo.RoomBoardVo;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class RoomBoardCardDto {
+	private RoomBoardVo roomBoardVo;
+	private String thumbnailUrl;
+	private String nickname;
+	private String profileImagePath;
+}

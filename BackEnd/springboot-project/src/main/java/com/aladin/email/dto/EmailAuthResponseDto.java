@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:892904494b190e643bfc3521497b04651a90d73704d3bfb25da9ccc8bb04a3f3
-size 353
+package com.aladin.email.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class EmailAuthResponseDto {
+	private Boolean isSuccess;
+
+	private EmailAuthResponseDto(boolean isSuccess) {
+		this.isSuccess = isSuccess;
+	}
+
+	public static EmailAuthResponseDto of(boolean isSuccess) {
+		return new EmailAuthResponseDto(isSuccess);
+	}
+}
