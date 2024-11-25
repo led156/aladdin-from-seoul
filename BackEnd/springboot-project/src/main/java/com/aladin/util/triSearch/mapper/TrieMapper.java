@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8dfd4bcc4614398ee878aeff9ddcde64d0cb2452b81b58689aaea11e5d9fe98
-size 397
+package com.aladin.util.triSearch.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.aladin.house.vo.DongCodeVo;
+import com.aladin.house.vo.HouseCardVo;
+
+@Mapper
+public interface TrieMapper {
+
+	List<DongCodeVo> findAllDongCodes();
+
+	List<HouseCardVo> findAllAptSeqAndAptNameOfHouseCards();
+
+	List<HouseCardVo> findAllAptSeqAndAptNameOfHouseCardsInSeoul();
+}

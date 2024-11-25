@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cde66fe20e54f0402d3c9dd317e63b293550c80878dbdae4c88f1b0efee3dc5b
-size 402
+package com.aladin.util.chatGPT.model;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class chatCompletionResponse {
+	private List<Choice> choices;
+
+	@Data
+	@NoArgsConstructor
+	@AllArgsConstructor
+	public static class Choice {
+		private int index;
+		private ChatMessage message;
+	}
+}
