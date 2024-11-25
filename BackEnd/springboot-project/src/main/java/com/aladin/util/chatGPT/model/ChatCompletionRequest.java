@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:836c2bc8535b601abf73f8fe8588dc877233aa8289cceac33ba3d0d90898177c
-size 439
+package com.aladin.util.chatGPT.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class ChatCompletionRequest {
+	private String model;
+	private List<ChatMessage> messages;
+	private int max_tokens = 100;
+
+	public ChatCompletionRequest(String model, String prompt) {
+		this.model = model;
+		this.messages = new ArrayList<ChatMessage>();
+		this.messages.add(new ChatMessage("user", prompt));
+	}
+
+}

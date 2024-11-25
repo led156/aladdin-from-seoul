@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c404e708ffb425317012e51ee6dc182877d5c0e722ffad1b15aca7ef7cacd67c
-size 415
+package com.aladin.email.dto;
+
+import java.time.LocalDateTime;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class EmailRequestDto {
+	@NotBlank
+	@Email
+	private String email;
+
+	private String username;
+
+	private Boolean isRegister;
+
+	private LocalDateTime authExpireDate;
+	private String authCode;
+}

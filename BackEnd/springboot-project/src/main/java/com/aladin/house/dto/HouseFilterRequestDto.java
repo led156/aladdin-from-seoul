@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:275795af8ea74d112de48a3caca8b8514235906a16aa2051b7e727390c43a80e
-size 482
+package com.aladin.house.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class HouseFilterRequestDto {
+	private Double excluUseArMin;
+	private Double excluUseArMax;
+	private String dealAmountMin;
+	private String dealAmountMax;
+	private String buildYearMin;
+	private String buildYearMax;
+	private Double latA; // 위도 최소값
+	private Double latB; // 위도 최대값
+	private Double lngA; // 경도 최소값
+	private Double lngB; // 경도 최대값
+}
