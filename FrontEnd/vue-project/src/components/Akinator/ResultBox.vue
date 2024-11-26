@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d24694539ae3b22177b5e9a45ee5ed88adfa954f18cdc2f0b2806390064f2ff0
-size 302
+<template>
+  <div class="result-box">
+    <h2>Result</h2>
+    <p>{{ result }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    result: {
+      type: String,
+      required: true,
+    },
+  },
+}
+</script>
+
+<style scoped>
+.result-box {
+  text-align: center;
+  margin: 20px 0;
+}
+</style>
